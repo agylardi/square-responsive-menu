@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Square Responsive Menu (SRM) by agylardi</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Square Responsive Menu (SRM)</h1>
+        <p>Navigation menu for responsive website based on research by Ahlstrom et al (2010)</p>
+
+        <p class="view"><a href="https://github.com/agylardi/square-responsive-menu">View the Project on GitHub <small>agylardi/square-responsive-menu</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/agylardi/square-responsive-menu/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/agylardi/square-responsive-menu/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/agylardi/square-responsive-menu">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Square Responsive Menu - SRM (Alpha 1.0)</h1>
+
+<p>jQuery plugin menu as alternative solution of navigation menu system for responsive website.
+Inspired and based on research by <a href="http://dl.acm.org/citation.cfm?doid=1753326.1753534">Ahlstrom et al (2010)</a>. The menu system is customizable with some options. 
+Built using jQuery version 1.8.3 and CSS 3</p>
+
+<h2>Author</h2>
+
+<p>Agyl Rahmadi / Gyl (<a href="mailto:agyl.ardi@gmail.com">agyl.ardi@gmail.com</a>)<br><strong>Notes</strong>: <em>This is my first attemp to make a JQuery plugin. Any feedback will be much appreciated</em></p>
+
+<h2>Usage</h2>
+
+<p>Download the package and link the JS file (jquery .js file and this plugin file: <code>jquery.squareresponsivemenu.js</code>) and 
+CSS file (<code>square-responsive-menu.css</code>) in your HTML.
+Also put <em>images</em> folder at the same directory with your HTML file.</p>
+
+<p>There are 3 menu levels available in the menu (class): <code>level-1</code>, <code>level-2</code>, <code>level-3</code>.
+The usage in basic HTML structure is as shown below: </p>
+
+<div class="highlight"><pre><span class="nt">&lt;nav</span> <span class="na">id=</span><span class="s">"square-menu"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"toggle-square"</span> <span class="na">value=</span><span class="s">""</span> <span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"level-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #5<span class="nt">&lt;/a&gt;</span>
+             <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"level-2"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3<span class="nt">&lt;/a&gt;</span>
+                    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"level-3"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.3.9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                    <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.4<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.5<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Sub-Menu Item #5.9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+             <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #7<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #8<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Menu Item #9<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></div>
+
+<p>For initiation of the plugin, just include the following script tag in your HTML:</p>
+
+<div class="highlight"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
+  <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#square-menu'</span><span class="p">).</span><span class="nx">squareResponsiveMenu</span><span class="p">();</span>
+    <span class="p">});</span> 
+<span class="nt">&lt;/script&gt;</span>
+</pre></div>
+
+<h2>Options</h2>
+
+<p>There are 5 options for this plugin. They are as the following:</p>
+
+<h3>squareHeight</h3>
+
+<p><code>squareHeight</code> is the height of menu items in pixel. 
+To make square menu items, just make sure this options is the same with <code>squareWidth</code> option.
+<br><em>Default value</em>: <code>75</code></p>
+
+<hr><h3>squareHeight</h3>
+
+<p><code>squareHeight</code> is the width of menu items in pixel.
+To make square menu items, just make sure this options is the same with <code>squareHeight</code> option.
+<br><em>Default value</em>: <code>75</code></p>
+
+<hr><h3>squareNumbers</h3>
+
+<p><code>squareNumbers</code> is the amount of spanning menu items (squares) in a menu level.
+<br><em>Default value</em>: <code>3</code></p>
+
+<hr><h3>menuItemsFlow</h3>
+
+<p><code>menuItemsFlow</code> is the orientation of which the menu items appear. (right to left, or left to right)
+<br><em>Default value</em>: <code>left</code></p>
+
+<hr><h3>togglePosition</h3>
+
+<p><code>togglePosition</code> is the orientation of on which way  the menu appears based on the <code>togglePosition</code> value. As the menu is targeted to be used in mobile screen, there
+are 4 value for this options: <code>top-left</code>, <code>top-right</code>, <code>bottom-right</code> and <code>bottom-left</code>.
+This option determine the appearance direction of menu items NOT the position of toggle button.
+<br><em>Default value</em>: <code>top-left</code></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/agylardi">agylardi</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
