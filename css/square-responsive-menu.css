@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* --------------------------- CSS for Radial Responsive Menu ---------------------------*
+ * Created by Agyl Rahmadi
+ * Version 1.0 Alpha
+ * 11 February 2013
+ */
+
+/*--------------  SAFELY CUSTOMIZABLE - Visual styling for menu elements -------------------*/
+
+.active { background-color: #FED22F !important; color: #333333 !important; z-index: 15; }
+
+#square-menu { 
+	font-size: 0.8em;
+	position: absolute;
+}
+
+
+/*--------------  Toggle Button -------------- */
+
+#toggle-square {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #555555;
+	background: #ffffff url('../image/3-lines.png') no-repeat center center;
+}
+	#toggle-square:hover, #toggle-square:active, #toggle-square.active { 
+		background: #FED22F url('../image/3-lines.png') no-repeat center center; 
+	}
+
+
+/* -------------- Menu Levels general styling -------------- */
+
+#square-menu ul.level-1 { }
+#square-menu ul.level-2 { }
+#square-menu ul.level-3 { }
+
+
+/* -------------- Menu Items -------------- */
+
+#square-menu > ul li {
+	background: #ffffff;
+	border: 1px solid #999999;	
+}
+	#square-menu ul li.active > a { color: #333333; }
+	#square-menu ul li.have-subs > a { background: url("../image/multi-level-arrow.png") no-repeat right bottom; }
+
+#square-menu ul li > a {
+	color: #EE5500;
+	background: #ffffff;
+}	
+	#square-menu ul li > a:hover { background-color: #FED22F; color: #333333 }	
+	
+/*--------------------------- RESTRICTED - Should not be modified ---------------------------*/
+	
+input:focus { outline: none; }
+.hide { display: none !important; }
+.show { display: inherit !important; }	
+
+#toggle-square {
+	cursor: pointer;
+	position: absolute;
+	margin-bottom: 1px;
+}
+	
+#square-menu ul.level-1 { z-index: 1; position: absolute }
+#square-menu ul.level-2 { z-index: 3 }
+#square-menu ul.level-3 { z-index: 5 }
+	#square-menu ul.level-2, 
+	#square-menu ul.level-3 {
+		padding: 0;
+		position: absolute;
+	}
+
+#square-menu > ul {
+	padding: 0;
+	list-style: none;
+}
+
+#square-menu > ul li {
+	margin: 0 0 1px 1px;
+	padding: 0;
+	text-align: center;
+	display: table;
+	position: relative;
+}
+
+#square-menu ul li > a {
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+	text-decoration: none; 
+}
