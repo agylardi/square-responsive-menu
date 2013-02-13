@@ -2,7 +2,7 @@ Square Responsive Menu - SRM (Alpha 1.0)
 ======================
 
 jQuery plugin menu as alternative solution of navigation menu system for responsive website.
-Inspired and based onresearch by Ahlstrom et al (2010). The menu system is customizable with some options. 
+Inspired and based on research by Ahlstrom et al (2010). The menu system is customizable with some options. 
 Built using jQuery version 1.8.3 and CSS 3
 
 ## Author
@@ -95,7 +95,7 @@ To make square menu items, just make sure this options is the same with `squareH
 ----
 
 ### togglePosition
-`togglePosition` is the position of toggle button on screen. As the menu is targeted to be used in mobile screen, there
+`togglePosition` is the orientation of on which way  the menu appears based on the `togglePosition` value. As the menu is targeted to be used in mobile screen, there
 are 4 value for this options: `top-left`, `top-right`, `bottom-right` and `bottom-left`.
 This option determine the appearance direction of menu items NOT the position of toggle button.
 <br />*Default value*: `top-left`
