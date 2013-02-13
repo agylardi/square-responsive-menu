@@ -2,7 +2,7 @@ Square Responsive Menu - SRM (Alpha 1.0)
 ======================
 
 jQuery plugin menu as alternative solution of navigation menu system for responsive website.
-Inspired and based on research by Ahlstrom et al (2010). The menu system is customizable with some options. 
+Inspired and based on research by <a href="http://dl.acm.org/citation.cfm?doid=1753326.1753534">Ahlstrom et al (2010)</a>. The menu system is customizable with some options. 
 Built using jQuery version 1.8.3 and CSS 3
 
 ## Author
