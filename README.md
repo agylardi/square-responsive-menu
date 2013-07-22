@@ -5,7 +5,7 @@ jQuery plugin menu as alternative solution of navigation menu system for respons
 Inspired and based on research by <a href="http://dl.acm.org/citation.cfm?doid=1753326.1753534">Ahlstrom et al (2010)</a>. The menu system is customizable with some options. 
 Built using jQuery version 1.8.3 and CSS 3
 
-[ <a href="http://www.oswego.edu/~arahmadi/square-menu/" target="_blank">Live Demo</a> ]
+[ <a href="http://agylardi.com/demo/square-menu/" target="_blank">Live Demo</a> ]
 
 ## Author
 Agyl Rahmadi / Gyl (agyl.ardi@gmail.com)<br />
